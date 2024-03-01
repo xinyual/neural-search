@@ -62,7 +62,7 @@ public abstract class InferenceProcessor extends AbstractProcessor {
     ) {
         super(tag, description);
         this.type = type;
-        if (StringUtils.isBlank(modelId)) throw new IllegalArgumentException("model_id is null or empty, cannot process it");
+        // if (StringUtils.isBlank(modelId)) throw new IllegalArgumentException("model_id is null or empty, cannot process it");
         validateEmbeddingConfiguration(fieldMap);
 
         this.listTypeNestedMapKey = listTypeNestedMapKey;
